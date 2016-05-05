@@ -1,7 +1,13 @@
+import subprocess
+
 GB = 1024.0 ** 3
 MB = 1024.0 ** 2
 KB = 1024.0 
 
+def run_command(cmd):
+    p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+    p.wait()
+    return p.stdout, p.stderr, p.returncode
 
 def sanitise(line):
     line = line.strip()
