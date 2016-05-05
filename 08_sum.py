@@ -46,13 +46,6 @@ def parse_cmdline():
     if len(args) != 1:
         parser.error("Please provide a filename")
     return options, args[0]
-
-def sanitise(line):
-    line = line.strip()
-    if "#" in line:
-        comment_start = line.find("#")
-        line = line[0:comment_start]
-    return line.strip()
     
 def parse(line):
     num = re.compile(r'^([a-zA-Z]+):([0-9]+)\s+([MGBKmgbk]?)$')
@@ -70,7 +63,7 @@ def main():
     total = {}
     with open(filename) as f:
         for i in f:
-            i = sanitise(i)
+            i = utils.sanitise(i)
             if i:
                 try:
                     logger.debug("Parsing %s", i)

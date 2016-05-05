@@ -2,6 +2,14 @@ GB = 1024.0 ** 3
 MB = 1024.0 ** 2
 KB = 1024.0 
 
+
+def sanitise(line):
+    line = line.strip()
+    if "#" in line:
+        comment_start = line.find("#")
+        line = line[0:comment_start]
+    return line.strip()
+
 def to_bytes(val, unit):
     """ Receives a value and a unit (one of M, B, G or K) and returns
     the value in bytes"""
