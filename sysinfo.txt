@@ -18,7 +18,8 @@ Mem: 8G
 HDD Tech: Platter
 HDD Capacity: 256 G
 Partitions:
-/ rest
+/tmp 50G
+/ 128G
 
 hostname: hare
 commission date: Jan 20 2013
@@ -26,7 +27,9 @@ Mem: 8G
 HDD Tech: Platter
 HDD Capacity: 256 G
 Partitions:
-/ rest
+/home 12G
+/var 50G
+/ 25G
 
         
             
