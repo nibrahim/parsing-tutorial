@@ -1,0 +1,30 @@
+user: guest2
+hostname: ec2-52-196-199-119.ap-northeast-1.compute.amazonaws.com 
+
+LOCAL:hostname
+REMOTE:hostname
+LOCAL:date
+REMOTE:date
+FETCH:/home/ubuntu/lists/words-0.txt
+FETCH:/home/ubuntu/lists/words-1.txt
+FETCH:/home/ubuntu/lists/words-2.txt
+FETCH:/home/ubuntu/lists/words-3.txt
+FETCH:/home/ubuntu/lists/words-4.txt
+FETCH:/home/ubuntu/lists/words-5.txt
+FETCH:/home/ubuntu/lists/words-6.txt
+FETCH:/home/ubuntu/lists/words-7.txt
+FETCH:/home/ubuntu/lists/words-8.txt
+FETCH:/home/ubuntu/lists/words-9.txt
+FETCH:/home/ubuntu/lists/words-10.txt
+FETCH:/home/ubuntu/lists/words-11.txt
+FETCH:/home/ubuntu/lists/words-12.txt
+FETCH:/home/ubuntu/lists/words-13.txt
+FETCH:/home/ubuntu/lists/words-14.txt
+FETCH:/home/ubuntu/lists/words-15.txt
+FETCH:/home/ubuntu/lists/words-16.txt
+FETCH:/home/ubuntu/lists/words-17.txt
+FETCH:/home/ubuntu/lists/words-18.txt
+FETCH:/home/ubuntu/lists/words-19.txt
+LOCAL:wc words-0.txt words-1.txt words-2.txt words-3.txt words-4.txt words-5.txt words-6.txt words-7.txt words-8.txt words-9.txt words-10.txt words-11.txt words-12.txt words-13.txt words-14.txt words-15.txt words-16.txt words-17.txt words-18.txt words-19.txt
+LOCAL: rm words-0.txt words-1.txt words-2.txt words-3.txt words-4.txt words-5.txt words-6.txt words-7.txt words-8.txt words-9.txt words-10.txt words-11.txt words-12.txt words-13.txt words-14.txt words-15.txt words-16.txt words-17.txt words-18.txt words-19.txt
+

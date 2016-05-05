@@ -1,0 +1,27 @@
+# These are disk capacities as of 1/Apr/2016
+# The following are for the primary
+88208 M
+78501 G
+60471 B
+87467 M
+74948 M
+61408 M
+81895 G
+16409 B
+18561 B
+
+# These are for the secondary
+7789  G
+41949 M
+75724 B
+38555 M
+70986 G
+5881  B  
+29128 B
+
+
+# The following are going to be retired
+40513 M  # Hardware error
+57983 G  # Support contract over
+31966 B  # Low capacity
+15814 M  # Hardware error

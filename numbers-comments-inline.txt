@@ -1,0 +1,24 @@
+# This is a list of disk capacities
+# The following are primary
+88208
+78501
+60471
+87467
+74948 
+614   # This disk should be retired
+81895
+16409
+18561
+7789 
+
+# These are secondary
+41949
+75724
+38555
+70986
+5881  # Has been acting weird lately
+29128
+40513
+57983
+31966
+15814

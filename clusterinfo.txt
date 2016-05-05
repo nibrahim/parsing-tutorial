@@ -1,0 +1,35 @@
+# Data files for servers as of April/1/2016
+# Compiled by Joe Musashi <musashi@majestic12.gov>
+
+clustername: rodents
+owner: musashi@majestic12.gov
+
+hostname: rabbit
+commission date: Feb 25 2014
+Mem: 16G
+HDD Tech: SSD
+HDD Capacity: 512 G
+Partitions:
+/home 50G
+/tmp 1G
+/var 10G
+/ rest
+
+hostname: weasel
+commission date: Apr 10 2014
+Mem: 8G
+HDD Tech: Platter
+HDD Capacity: 256 G
+Partitions:
+/ rest
+
+hostname: hare
+commission date: Jan 20 2013
+Mem: 8G
+HDD Tech: Platter
+HDD Capacity: 256 G
+Partitions:
+/ rest
+
+        
+            

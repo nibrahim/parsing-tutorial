@@ -1,0 +1,27 @@
+# These are disk capacities as of 1/Apr/2016
+# The following are for the primary
+Eagle:88208 M
+Eagle:78501 G
+Crow:60471 B
+Sparrow:87467 M
+Crow:74948 M
+Eagle:61408 M
+Falcon:81895 G
+Vulture:16409 B
+Vulture:18561 B
+
+# These are for the secondary
+Crow:7789  G
+Sparrow:41949 M
+Vulture:75724 B
+Swan:38555 M
+Eagle:70986 G
+Swan:5881  B  
+Eagle:29128 B
+
+
+# The following are going to be retired
+Crow:40513 M  # Hardware error
+Swan:57983 G  # Support contract over
+Eagle:31966 B  # Low capacity
+Falcon:15814 M  # Hardware error
