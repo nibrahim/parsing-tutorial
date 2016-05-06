@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Outline</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="Outline"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2016-05-06T09:29+0530"/>
+<meta name="author" content="Noufal Ibrahim"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Outline</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 1</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Get data files</a></li>
+<li><a href="#sec-1-2">1.2 Basic git intro</a></li>
+<li><a href="#sec-1-3">1.3 Exercise 1</a></li>
+<li><a href="#sec-1-4">1.4 Exercise 2</a></li>
+<li><a href="#sec-1-5">1.5 Exercise 3</a></li>
+<li><a href="#sec-1-6">1.6 Exercise 4 (numbers-comments.txt)</a></li>
+<li><a href="#sec-1-7">1.7 Exercise 5 (numbers-comments-inline.txt)</a></li>
+<li><a href="#sec-1-8">1.8 Exercise 6 (numbers-units.txt)</a></li>
+<li><a href="#sec-1-9">1.9 Exercise 7 (numbers-bad-input.txt)</a></li>
+<li><a href="#sec-1-10">1.10 Exercise 8 (numbers-bad-input.txt)</a></li>
+<li><a href="#sec-1-11">1.11 Exercise 9 (numbers-names.txt)</a></li>
+<li><a href="#sec-1-12">1.12 Exercise 10 (testing)</a></li>
+<li><a href="#sec-1-13">1.13 Exercise 11 (packaging)</a></li>
+<li><a href="#sec-1-14">1.14 Exercise 12 (sysinfo.txt)</a></li>
+<li><a href="#sec-1-15">1.15 Exercise 13</a></li>
+<li><a href="#sec-1-16">1.16 OO and Exercise 14</a></li>
+<li><a href="#sec-1-17">1.17 OO special methods (Use clusterinfo.txt)</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 2</a>
+<ul>
+<li><a href="#sec-2-1">2.1 Exercise 14</a></li>
+<li><a href="#sec-2-2">2.2 Exercise 15</a></li>
+<li><a href="#sec-2-3">2.3 Exercise 16</a></li>
+<li><a href="#sec-2-4">2.4 Exercise 17</a></li>
+<li><a href="#sec-2-5">2.5 Theory on shelling out vs. in process</a></li>
+<li><a href="#sec-2-6">2.6 Theory - Introducing Paramiko</a></li>
+<li><a href="#sec-2-7">2.7 Exercise 18</a></li>
+<li><a href="#sec-2-8">2.8 Exercise 19</a></li>
+<li><a href="#sec-2-9">2.9 Exercise 20 (commands-1.txt)</a></li>
+<li><a href="#sec-2-10">2.10 Exercise 21 Parallelism</a></li>
+<li><a href="#sec-2-11">2.11 Exercise 22</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 3 Packaging</a>
+<ul>
+<li><a href="#sec-3-1">3.1 Exercise 23</a></li>
+<li><a href="#sec-3-2">3.2 Exercise 24</a></li>
+<li><a href="#sec-3-3">3.3 Exercise 23 Packaging our script</a></li>
+<li><a href="#sec-3-4">3.4 Exercise 24</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 1</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>  Basic python using parsing as examples.
+  Should cover 
+</p><ul>
+<li>basic data types (strings, lists, dictionaries)
+</li>
+<li>files
+</li>
+<li>With statements
+</li>
+</ul>
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Get data files</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<ul>
+<li><a href="http://bit.ly/cisco-python-intro">http://bit.ly/cisco-python-intro</a>
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Basic git intro</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<ul>
+<li>Git init, add, commit, log, diff
+</li>
+<li>Pushing code to github
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Exercise 1</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<ul>
+<li>Sum a list of numbers. Numbers are in numbers.txt
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-3-1">Concepts<br/>
+<ul>
+<li>Reading from files, iterating using for loops
+</li>
+<li>Simple arithmetic
+</li>
+</ul>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Exercise 2</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<ul>
+<li>Make the program receive command line options so that we can use
+      different input files.
+</li>
+</ul>
+
+
+<ul>
+<li id="sec-1-4-1">Concepts<br/>
+<ul>
+<li>importing modules
+</li>
+<li>Standard library
+</li>
+</ul>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Exercise 3</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<ul>
+<li>This is is a list of bytes. Let's try to print it in a human
+      readable format.
+<ul>
+<li>If its below 5KB, print it as bytes
+</li>
+<li>If it's between 5KB and 1.5MB, print it as KB
+</li>
+<li>If it's between 1.5MB and 1.5GB, print it as MB
+</li>
+<li>Anything greater, print it as GB
+</li>
+</ul>
+
+</li>
+<li>Use numbers-b.txt, numbers-k.txt, numbers-m.txt and the numbers.txt
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-5-1">Concepts<br/>
+<ul>
+<li>Writing simple functions
+</li>
+<li>If statements
+</li>
+<li>Importing modules to test functions
+</li>
+<li>The _<sub>name</sub>__ trick
+</li>
+<li>String formatting
+</li>
+</ul>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Exercise 4 (numbers-comments.txt)</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<ul>
+<li>Now suppose the file has comments in it. Comments start with a
+      hash at the beginning of the line.
+</li>
+<li>Also, the file has empty lines in it.
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-6-1">Concepts<br/>
+<ul>
+<li>Basic string parsing
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Exercise 5 (numbers-comments-inline.txt)</h3>
+<div class="outline-text-3" id="text-1-7">
+
+<ul>
+<li>Inline comments
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-7-1">Concepts<br/>
+<ul>
+<li>More complex string parsing.
+</li>
+<li>in operator
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> Exercise 6 (numbers-units.txt)</h3>
+<div class="outline-text-3" id="text-1-8">
+
+<ul>
+<li>Each number has a unit associated with it.
+</li>
+<li>Convert it before summing
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-8-1">Concepts<br/>
+<ul>
+<li>More string parsing
+</li>
+<li>Modularising programs
+</li>
+<li>Writing a library of useful functions  (strip<sub>comments</sub>, human<sub>to</sub><sub>raw</sub>, raw<sub>to</sub><sub>human</sub>)
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> Exercise 7 (numbers-bad-input.txt)</h3>
+<div class="outline-text-3" id="text-1-9">
+
+<ul>
+<li>Handling bad input
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-9-1">Concepts<br/>
+<ul>
+<li>Stricter parsing using regular expressions
+</li>
+<li>Raising and handling exceptions
+</li>
+<li>More modular code
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-10" class="outline-3">
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> Exercise 8 (numbers-bad-input.txt)</h3>
+<div class="outline-text-3" id="text-1-10">
+
+<ul>
+<li>Adding a "&ndash;strict" argument to the program
+</li>
+<li>Adding a logger for more information
+</li>
+<li>With strict, it will abort when there's a bad line
+</li>
+<li>Without strict, it will continue when there's a bad line
+</li>
+<li>Also add a &ndash;debug flag for more verbose logging
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-10-1">Concepts<br/>
+<ul>
+<li>More standard library
+</li>
+<li>Command line options
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-11" class="outline-3">
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> Exercise 9 (numbers-names.txt)</h3>
+<div class="outline-text-3" id="text-1-11">
+
+<ul>
+<li>Sizes along with disk names
+</li>
+<li>Print total per disk
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-11-1">Concepts<br/>
+<ul>
+<li>Using dictionaries to store data
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-12" class="outline-3">
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> <span class="todo TODO">TODO</span> Exercise 10 (testing)</h3>
+<div class="outline-text-3" id="text-1-12">
+
+<ul>
+<li>Write unit tests using an external test framework
+</li>
+<li>virtualenv, py.test
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-12-1">Concepts<br/>
+<ul>
+<li>How to make code testable
+</li>
+<li>Modular code that has good test coverage
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-13" class="outline-3">
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> <span class="todo TODO">TODO</span> Exercise 11 (packaging)</h3>
+<div class="outline-text-3" id="text-1-13">
+
+<ul>
+<li>Package the application using setup.py
+</li>
+<li>Upload it onto PyPI
+</li>
+<li>Try to install somebody elses and use it
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-14" class="outline-3">
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> Exercise 12 (sysinfo.txt)</h3>
+<div class="outline-text-3" id="text-1-14">
+
+<ul>
+<li>Parse multi line input
+</li>
+<li>Get system information into large dictionaries
+</li>
+</ul>
+
+<ul>
+<li id="sec-1-14-1">Concepts<br/>
+<ul>
+<li>Use dictionaries to hold larger data structures
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1-15" class="outline-3">
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> Exercise 13</h3>
+<div class="outline-text-3" id="text-1-15">
+
+<ul>
+<li>Parsing real world data
+<ul>
+<li>Get avg time from ping.txt
+</li>
+<li>Find ip address of wlan0 from interfaces.txt
+</li>
+<li>Find out how many CPUs your machine has from /proc/cpuinfo
+</li>
+<li>Find out how many users on your system (from /etc/passwd) don't have real shells (from /etc/shells)
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-16" class="outline-3">
+<h3 id="sec-1-16"><span class="section-number-3">1.16</span> OO and Exercise 14</h3>
+<div class="outline-text-3" id="text-1-16">
+
+<ul>
+<li>Parse sysinfo.txt but convert it into an object
+</li>
+<li>Add extra fields like "age" (current time minus creation time)
+</li>
+<li>Use methods to get out machines and to check if a machine is there. 
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-17" class="outline-3">
+<h3 id="sec-1-17"><span class="section-number-3">1.17</span> <span class="todo TODO">TODO</span> OO special methods (Use clusterinfo.txt)</h3>
+<div class="outline-text-3" id="text-1-17">
+
+<ul>
+<li>Adding _<sub>repr</sub>__
+</li>
+<li>Add A cluster object which will hold all the machines in a file.
+</li>
+<li>Make servers accessible as if cluster were a dictionary e.g. cluster['rabbit']
+</li>
+<li>Make checking possible using <code>in</code>
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 2</h2>
+<div class="outline-text-2" id="text-2">
+
+<ul>
+<li>External programs
+</li>
+<li>ssh 
+</li>
+</ul>
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Exercise 14</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<ul>
+<li>Running external programs and getting output
+</li>
+<li>Introducing the subprocess module
+</li>
+<li>Get complete Registrant information for Cisco.com from "whois cisco.com"
+</li>
+<li>Get Total disk consumption (in GB) from "df -kh"
+</li>
+<li>Verify which of these hosts are up - google.com, nonexistent.io, qqqq.io, facecbook.com (using ping)
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Exercise 15</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<ul>
+<li>Using ssh to interact with remote machines
+</li>
+<li>Setup
+<ul>
+<li>Use one of guest[1-16]@ec2-52-193-212-196.ap-northeast-1.compute.amazonaws.com
+</li>
+<li>Create a key-pair using ssh-keygen
+</li>
+<li>Then add it to the server using ssh-copy-id 
+</li>
+<li>Now, you can connect
+</li>
+</ul>
+
+</li>
+<li>ssh and find uptime
+<ul>
+<li>Use the uptime command
+</li>
+</ul>
+
+</li>
+<li>ssh and find top memory usage
+<ul>
+<li>Try to run the top command to find out which pid is consuming maximum memory (top -b -n1 -o '+%MEM')
+</li>
+<li>Try to do something similar and find the 5 most memory
+        consuming commands along with their pid, command and VIRT
+        memory usage.
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Exercise 16</h3>
+<div class="outline-text-3" id="text-2-3">
+
+<ul>
+<li>Using scp to copy over files
+</li>
+<li>Fetch "/tmp/boot.log" to your machine.
+</li>
+<li>Create a file with some information and send it to the remote machine to your account
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Exercise 17</h3>
+<div class="outline-text-3" id="text-2-4">
+
+<ul>
+<li>Try to modularise the above two.
+</li>
+<li>Create an object called "SSHClient" initialised with the server and username
+</li>
+<li>It should have a "get<sub>file</sub>", "send<sub>file</sub>" and "run<sub>remote</sub><sub>command</sub>" methods.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Theory on shelling out vs. in process</h3>
+<div class="outline-text-3" id="text-2-5">
+
+<ul>
+<li>Inefficiencies with this approach and some analysis
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Theory - Introducing Paramiko</h3>
+<div class="outline-text-3" id="text-2-6">
+
+<ul>
+<li>Use paramiko to create a connection to the remote server and run a command
+</li>
+<li>Compare this with our subprocess solution
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-7" class="outline-3">
+<h3 id="sec-2-7"><span class="section-number-3">2.7</span> Exercise 18</h3>
+<div class="outline-text-3" id="text-2-7">
+
+<ul>
+<li>Create a Server object which contains the username, keys etc. of the server.
+</li>
+<li>It should have a run<sub>command</sub>, get<sub>file</sub> and send<sub>file</sub> method.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-8" class="outline-3">
+<h3 id="sec-2-8"><span class="section-number-3">2.8</span> <span class="todo TODO">TODO</span> Exercise 19</h3>
+<div class="outline-text-3" id="text-2-8">
+
+<ul>
+<li>Try to establish connectivity between two machines
+</li>
+<li>ssh into two machines. Start a simple http server on one of them inside the /etc/directory
+</li>
+<li>From the other machine, try to fetch the passwd file.
+</li>
+<li>second machine is ec2-52-193-83-16.ap-northeast-1.compute.amazonaws.com
+</li>
+<li>Write a program to 
+<ul>
+<li>ssh into ec2-52-193-83-16.ap-northeast-1.compute.amazonaws.com
+</li>
+<li>start an http server there on port p.
+</li>
+<li>Then ssh into ec2-52-193-212-196.ap-northeast-1.compute.amazonaws.com
+</li>
+<li>and try to run curl <a href="http://ec2-52-193-83-16.ap-northeast-1.compute.amazonaws.com:p/">http://ec2-52-193-83-16.ap-northeast-1.compute.amazonaws.com:p/</a>
+</li>
+<li>Verify that it works
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-9" class="outline-3">
+<h3 id="sec-2-9"><span class="section-number-3">2.9</span> <span class="todo TODO">TODO</span> Exercise 20 (commands-1.txt)</h3>
+<div class="outline-text-3" id="text-2-9">
+
+<ul>
+<li>Script files
+</li>
+<li>All commands are preceeded by a qualifier
+<ul>
+<li>LOCAL:Run command locally
+</li>
+<li>REMOTE:Run command on remote machine
+</li>
+<li>FETCH:Get specified file from remote machine
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-10" class="outline-3">
+<h3 id="sec-2-10"><span class="section-number-3">2.10</span> Exercise 21 Parallelism</h3>
+<div class="outline-text-3" id="text-2-10">
+
+<ul>
+<li>Fetching files like we did above takes time.
+</li>
+<li>Let's see if we can do better.
+</li>
+<li>Write a program to fetch a big file via. http multiple times
+<ul>
+<li>Try it with multiple serially, multiple thread and multiple
+        processes
+</li>
+</ul>
+
+</li>
+<li>Now try a computationally intense function. Call it multiple times
+<ul>
+<li>Try it with multiple serially, multiple thread and multiple
+        processes.
+</li>
+<li>The GIL
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-11" class="outline-3">
+<h3 id="sec-2-11"><span class="section-number-3">2.11</span> Exercise 22</h3>
+<div class="outline-text-3" id="text-2-11">
+
+<ul>
+<li>Add One more field to out script file. 
+      LOCAL:S:command
+      to run command synchronously
+      LOCAL:A:command
+      to run command asynchronously (separate thread)
+
+<p>      
+      and 
+</p>
+<p>      
+      WAIT
+</p>
+<p>
+      to wait till all background threads are done.
+</p>
+<p>      
+      Write something to fetch a few files and then do a du on all of
+      them.
+</p></li>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 3 Packaging</h2>
+<div class="outline-text-2" id="text-3">
+
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Exercise 23</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<ul>
+<li>Writing tests for our script
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Exercise 24</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<ul>
+<li>Writing documentation for our scripts
+</li>
+<li>Sphinx
+</li>
+<li>Restructured text
+</li>
+<li>Docstrings
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Exercise 23 Packaging our script</h3>
+<div class="outline-text-3" id="text-3-3">
+
+<ul>
+<li>Layout
+</li>
+<li>Tests
+</li>
+<li>Documentation
+</li>
+<li>setup.py
+<ul>
+<li>Requirements
+</li>
+<li>Entry points
+</li>
+</ul>
+
+</li>
+<li>PyPI
+</li>
+<li>Local PyPI
+</li>
+<li>Upload your script to PyPI
+</li>
+<li>Try installing it in a different virtualenv
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Exercise 24</h3>
+<div class="outline-text-3" id="text-3-4">
+
+<ul>
+<li>Fabric
+</li>
+<li>Automating remote and local repetitive tasks
+</li>
+<li>Practical use cases for fabric
+</li>
+<li>Examples
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2016-05-06T09:29+0530</p>
+<p class="author">Author: Noufal Ibrahim</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
