@@ -1,0 +1,28 @@
+<config>
+  <cluster>
+    <server name="aws2-52.awscloud.com">
+      <users>
+        <user>
+          <name>noufal</name>
+          <passwd>secret</passwd>
+        </user>
+        <user>
+          <name>foo</name>
+          <passwd>bar</passwd>
+        </user>
+      </users>
+    </server>
+    <server name="aws3-52.awscloud.com">
+      <users>
+        <user>
+          <name>noufal2</name>
+          <passwd>secret2</passwd>
+        </user>
+        <user>
+          <name>foo2</name>
+          <passwd>bar2</passwd>
+        </user>
+      </users>
+    </server>
+  </cluster>
+</config>
